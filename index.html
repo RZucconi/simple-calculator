@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Super Claculator 2000</title>
 </head>
 <body>
     <h1>Simple Calculator 2000 :</h1>
     <script>
-        let firstValue = parseInt(prompt("enter the frst value :"));//on peux mettre + devant prompt pour transformer le string en number.
-        let operator = parseInt(prompt("enter a new operator"));
-        let secondValue = prompt("enter the frst value :");
+        let firstValue = parseInt(prompt("enter the first value :"));//on peux mettre + devant prompt pour transformer le string en number.
+        let operator = prompt("enter a new operator");
+        let secondValue = prompt("enter the secondvalue :");
+        
+        switch (operator) {
+            case '+' :
+                console.log(firstValue + secondValue);
+                break;
+            case '-' :
+                console.log(firstValue - secondValue);
+                break;
+            case '*' :
+                console.log(firstValue * secondValue);
+                break;
+            case '/' :
+                console.log(firstValue / secondValue);
+                break;
+            default:
+                console.log("Invalid operator");
+        }
 
-        console.log (firstValue + secondValue);
+        //console.log (firstValue + secondValue);
         //console.log(+firstValue + +secondvalue) foncionne aussi pour transformer un string en number.
 
     </script>
